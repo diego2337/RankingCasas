@@ -12,7 +12,7 @@ Buscando simplicidade, foi utilizada a linguagem C++. O banco de dados foi abstr
 Para gerar uma lista ordenada de famílias que obedecem aos critérios estabelecidos, a classe `Ranking` foi criada, responsável por fazer as verificações e somar os pontos. Em resumo, o método `getRanking`:
 
 - Recebe uma família, definida pela classe `Family`;
-- Inicialmente descarta famílias inaptas com o método `discardUnqualified`, que considera os critérios estabelecidos;
+- Inicialmente descarta famílias inaptas com o método `isQualified`, que considera os critérios estabelecidos;
 - Soma o total de pontos, acessando métodos separados para cada critério.
 
 Separando os critérios em métodos, mantém-se um sistema coeso. Se novos critérios forem requisitados, eles podem facilmente ser adicionados com a inclusão de novos métodos.
